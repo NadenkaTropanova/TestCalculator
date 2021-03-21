@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- *  Класс создания нового активити с результатами операации
+ *  Класс создания нового активити с результатами операции
  */
 public class SecondActivity extends AppCompatActivity {
 
@@ -28,7 +28,7 @@ public class SecondActivity extends AppCompatActivity {
         textView.setTextSize(50);
         textView.setGravity(Gravity.CENTER);
 
-        //добаваляем в activity_main макет и в макет всьавляем текст вьюшку
+        //добаваляем в activity_main макет и в макет вставляем текст
         setContentView(linearLayout);
         linearLayout.addView(textView);
 
