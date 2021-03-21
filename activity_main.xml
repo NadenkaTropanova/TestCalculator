@@ -8,73 +8,84 @@
 
 
     <EditText
-        android:id="@+id/first_operand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/enter_text_1"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
         android:autofillHints="phone"
-        android:ems="10"
+        android:ems="15"
         android:hint="Введите число"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:inputType="phone"
+        android:maxLength="6"
+        app:layout_constraintBottom_toTopOf="@+id/enter_text_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347"
-        tools:targetApi="o" />
+        app:layout_constraintVertical_bias="0.887"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="q" />
 
     <EditText
-        android:id="@+id/second_operand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/enter_text_2"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
         android:autofillHints="phone"
-        android:ems="10"
+        android:ems="15"
         android:hint="Введите число"
-        android:inputType="number"
+        android:inputType="phone"
+        android:maxLength="6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="q" />
 
-        tools:targetApi="o" />
 
     <TextView
-        android:id="@+id/text_on_first_operand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/first_operand"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:gravity="center"
         android:text="Первое слагаемое"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/second_operand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/second_operand"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Второе  слагаемое"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354" />
+        app:layout_constraintVertical_bias="0.544"
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/text_on_second_operand"
-        android:layout_width="124dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="18dp"
-        android:text="Второе слагаемое"
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSendClick"
+        android:background="@color/colorPrimaryDark"
+        android:text="Сложить"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="339dp"
-        android:layout_height="43dp"
-        android:onClick="onClick"
-        android:text="Сложить"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.678" />
-
+        app:layout_constraintVertical_bias="0.767"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
