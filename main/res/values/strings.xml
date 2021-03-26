@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="text_on_first_operand">Первое слагаемое:</string>
+    <string name="text_on_second_operand">Второе слагаемое:</string>
+    <string name="hint_phone">Целое число</string>
+    <string name="adding_button">Add</string>
+    <string name="first_operand">0</string>
+    <string name="second_operand">0</string>
+    <string name="plus">+</string>
+    <string name="equally">=</string>
+    <string name="result">0</string>
+</resources>
