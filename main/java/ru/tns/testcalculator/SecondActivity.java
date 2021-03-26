@@ -20,14 +20,6 @@ public class SecondActivity extends AppCompatActivity {
         // заявление макета
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        LinearLayout linearLayout = new LinearLayout(this);
-        linearLayout.setOrientation(LinearLayout.VERTICAL);
-        linearLayout.setGravity(Gravity.CENTER);
-
-        // задание текстового элемента
-        TextView textView = new TextView(this);
-        textView.setTextSize(50);
-        textView.setGravity(Gravity.CENTER);
 
         //добаваляем в activity_main макет и в макет всьавляем текст вьюшку
         setContentView(linearLayout);
